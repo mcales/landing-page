@@ -1,12 +1,22 @@
-/*html{
+*html{
 	box-sizing: border-box;
 }
 *,*:before, *:after{
 	box-sizing: inherit;
 }
-*/
 body {
 	background-color: LightGray;
+	text-align:center;
+	font-family:'Roboto', sans-serif;
+	font-size:16px;
+	color:#838994;
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
+}
+.content {
+	width: 970px;
+	height: 70px;
+	margin:0 auto;
 }
 div{
 	border: 1px solid Chocolate;
@@ -20,26 +30,16 @@ ul{
 .top-navigation {
 	background-color:white;
 }
-.top-navigation > .content {
-	width: 970px;
-	height: 70px;
-	margin:0 auto;
-}
-.links{
+.top-navigation > div > .links{
 	float:right;
-	font-family:'Roboto', sans-serif;
-	font-size:16px;
-	color:#838994;
-	letter-spacing: 0.03em;
-	-webkit-font-smoothing: antialiased;
 }
-.links > li{
+.top-navigation > div > .links > li{
 	display:inline-block;
 	margin-left:2rem;
 	margin-top:1rem;
 }
 
-.links > li > .active{
+.top-navigation > div > .links > li > .active{
 	color: #4c5058;
 	font-weight: 500;
 }
@@ -48,7 +48,38 @@ ul{
 	margin-top: 15px;
 }
 
-.links > li > a:hover{
+.top-navigation > div > .links > li > a:hover{
 	cursor: pointer;
 	color: #4c5058;
+}
+.introduction{
+	padding: 19rem 0;
+	background-image: url('../Images/first-background-copy.jpg');
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: center center;
+	color:white;
+	vertical-align:baseline;
+}
+.introduction > section > h1{
+	font-size:3.125rem;
+	font-weight:300;
+}
+.introduction > section > h3{
+	margin-top:1rem;
+	font-size:1.562rem;
+	font-weight:300;
+}
+button{
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding:1rem 1.5rem;
+	width:6rem;
+	background-color:#f15a29;
+	color:white;
+}
+button:hover{
+	cursor:pointer;
+	background-color:#FF3E00;
 }
